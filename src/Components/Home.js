@@ -1,15 +1,17 @@
 import './style.css';
 import "@fontsource/quicksand";
 import Header from "./Header"
-import homePhoto from "./home.png"
+import Slideshow from './Slideshow'
+import { SlideshowImages } from './SlideshowImages'
+
 
 function Home() {
   return (
     <div>
       <Header />
+      <Slideshow slides={SlideshowImages} />
       <div>
-        <img src={homePhoto} className="home-photo" alt="jewelry" />
-        <div className="shopNewArrivals">SHOP NEW ARRIVALS</div>
+
       </div>
     </div>
   );

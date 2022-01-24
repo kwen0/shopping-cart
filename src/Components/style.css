@@ -8,22 +8,64 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 1em;
+  font-size: 0.8em;
   padding: 0.5em;
 }
 
 .logo {
-  height: 2.5em;
+  height: 3em;
 }
 
-.home-photo {
+.slider {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.photo {
   width: 100vw;
 }
 
-.shopNewArrivals {
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  font-size: 2.5rem;
+  color: #000;
+  opacity: 0.8;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 0.5em;
+  font-size: 2.5rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 2s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 2.5s;
+}
+
+.slide-button {
   position: absolute;
   bottom: 5em;
   right: 10em;
   background-color: white;
+  border: 1px solid black;
   padding: 1em 3em;
+  font-size: 0.8em;
 }

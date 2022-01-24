@@ -1,13 +1,14 @@
 import './style.css';
 import "@fontsource/quicksand";
 import logo from './logo.png'
+import { BsBag } from 'react-icons/bs';
 
 function Header() {
     return (
         <div className="header">
             <div>SHOP</div>
             <img src={logo} className="logo" alt="logo" />
-            <div>CART</div>
+            <div><BsBag /></div>
         </div>
     );
 }
