@@ -83,13 +83,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 5em;
   padding: 3em 5em;
 }
 
 .content-text {
   font-size: 13px;
   text-align: center;
-  padding: 4em;
+  width: 40vw;
 }
 
 h2 {
