@@ -8,7 +8,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 0.8em;
+  font-size: 14px;
   padding: 0.5em;
 }
 
@@ -17,7 +17,6 @@ body {
 }
 
 .slider {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -29,7 +28,7 @@ body {
 
 .right-arrow {
   position: absolute;
-  top: 50%;
+  top: 7.5em;
   right: 0.5em;
   font-size: 2.5rem;
   color: #000;
@@ -39,9 +38,13 @@ body {
   user-select: none;
 }
 
+.right-arrow:hover, .left-arrow:hover {
+  color: white;
+}
+
 .left-arrow {
   position: absolute;
-  top: 50%;
+  top: 7.5em;
   left: 0.5em;
   font-size: 2.5rem;
   color: #000;
@@ -67,11 +70,33 @@ body {
   background-color: white;
   border: 1px solid black;
   padding: 1em 3em;
-  font-size: 0.8em;
+  font-size: 14px;
 }
 
 .slide-button:hover {
   background-color: transparent;
   color: white;
   border: 1px solid white;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em 5em;
+}
+
+.content-text {
+  font-size: 13px;
+  text-align: center;
+  padding: 4em;
+}
+
+h2 {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+
+.content-image {
+  width: 400px;
 }

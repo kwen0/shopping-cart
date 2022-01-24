@@ -1,5 +1,3 @@
-import './style.css';
-import "@fontsource/quicksand";
 import logo from './images/logo.png'
 import { BsBag } from 'react-icons/bs';
 
