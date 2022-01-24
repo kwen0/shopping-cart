@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { SlideshowImages } from './SlideshowImages';
 import { VscChevronLeft, VscChevronRight } from 'react-icons/vsc';
+import { Link } from 'react-router-dom'
 
 const Slideshow = ({ slides }) => {
     const [current, setCurrent] = useState(0);
@@ -14,6 +15,11 @@ const Slideshow = ({ slides }) => {
         setCurrent(current === 0 ? length - 1 : current - 1);
     };
 
+    useEffect(() => {
+        const slide = setTimeout(() => setCurrent(nextSlide), 5000);
+        return () => clearTimeout(slide);
+    });
+
     return (
         <div className='slider'>
             <VscChevronLeft className='left-arrow' onClick={prevSlide} />
@@ -24,7 +30,7 @@ const Slideshow = ({ slides }) => {
                         {index === current && (
                             <div>
                                 <img src={slide.image} alt='jewelry' className='photo' />
-                                <div className="slide-button">{slide.caption}</div>
+                                <Link to={slide.link}><button className="slide-button">{slide.caption}</button></Link>
                             </div>
                         )}
                     </div>

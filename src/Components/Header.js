@@ -1,6 +1,6 @@
 import './style.css';
 import "@fontsource/quicksand";
-import logo from './logo.png'
+import logo from './images/logo.png'
 import { BsBag } from 'react-icons/bs';
 
 function Header() {

@@ -10,9 +10,6 @@ function Home() {
     <div>
       <Header />
       <Slideshow slides={SlideshowImages} />
-      <div>
-
-      </div>
     </div>
   );
 }
