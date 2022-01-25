@@ -10,7 +10,14 @@ body {
   align-items: center;
   font-size: 14px;
   padding: 0.5em;
-  border-bottom: 1px solid rgb(218,218,218);
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.header-right, .header-left {
+  display: flex;
+  width: 5em;
+  gap: 1em;
+  justify-content: center;
 }
 
 .logo {
@@ -65,9 +72,10 @@ body {
 }
 
 .slide-button {
-  position: absolute;
-  bottom: 5em;
-  right: 10em;
+  position: relative;
+  font-family: "Quicksand";
+  bottom: 8em;
+  left: 65em;
   background-color: white;
   border: 1px solid black;
   padding: 1em 3em;
