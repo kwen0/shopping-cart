@@ -10,6 +10,7 @@ body {
   align-items: center;
   font-size: 14px;
   padding: 0.5em;
+  border-bottom: 1px solid rgb(218,218,218);
 }
 
 .logo {
@@ -77,6 +78,7 @@ body {
   background-color: transparent;
   color: white;
   border: 1px solid white;
+  cursor: pointer;
 }
 
 .content {
@@ -100,4 +102,71 @@ h2 {
 
 .content-image {
   width: 400px;
+}
+
+.footer, .footer-top-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  border-top: 1px solid rgb(218,218,218);
+}
+
+.footer-top, .footer-top-left {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-top-left {
+  width: 50vw;
+  font-size: 13px;
+  gap: 60px;
+  justify-content: center;
+  padding: 20px 30px;
+}
+
+.footer-top-right {
+  padding: 20px 30px;
+}
+
+.ghlogo {
+  height: 14px;
+}
+
+.github {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  gap: 5px;
+  padding: 1em;
+  background-color: rgb(250,250,250);
+}
+
+li {
+  list-style: none;
+  line-height: 3em;
+}
+
+.email {
+  padding: 1em;
+  font-family: "quicksand";
+  width: 15em;
+  margin-top: 1em;
+}
+
+.comingsoon {
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
