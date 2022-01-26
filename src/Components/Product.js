@@ -4,7 +4,7 @@ import { data } from './data.js'
 function Product(props) {
     const { category } = props;
     return (
-        <div>
+        <div className="test">
             {category.map((item) => (
                 <div className="prod cell">
                     <img src={item.image} alt="jewelry" className="prod img" />

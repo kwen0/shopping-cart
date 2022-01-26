@@ -201,13 +201,20 @@ a {
 
 .prod.container {
   display: flex;
-  justify-content: center;
-  gap: 5em;
-  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 2em;
 }
 
 .prod.title {
   display: flex;
   width: 250px;
   justify-content: space-between;
+}
+
+.test {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4em;
 }

@@ -13,7 +13,7 @@ function Products() {
                 <Product category={data.necklaces} />
             </div>
             <Footer />
-        </div>
+        </div >
     );
 }
 
