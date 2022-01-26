@@ -11,7 +11,7 @@ import n2 from "./images/n2.jpg"
 import n3 from "./images/n3.jpg"
 import n4 from "./images/n4.jpg"
 
-export const products = {
+export const data = {
     earrings: [
         {
             id: 'e1',
@@ -23,7 +23,7 @@ export const products = {
         {
             id: 'e2',
             name: 'Silver Dome Hoops',
-            materila: 'Sterling Silver',
+            material: 'Sterling Silver',
             price: 75,
             image: e2
         },

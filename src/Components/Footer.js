@@ -33,7 +33,7 @@ function Footer() {
             <div className="github">
                 &copy; 2022 kwen0
                 <a href="https://github.com/kwen0/shopping-cart">
-                    <img src={github} alt="github logo" class="ghlogo" />
+                    <img src={github} alt="github logo" className="ghlogo" />
                 </a>
             </div>
         </div >

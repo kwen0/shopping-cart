@@ -93,6 +93,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -48px;
   gap: 5em;
   padding: 3em 5em;
 }
@@ -177,4 +178,36 @@ a {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+.prod.img {
+  width: 250px;
+}
+
+.prod {
+  font-size: 14px;
+}
+
+.prod.material {
+  font-size: 12px;
+}
+
+.prod.name {
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+
+}
+
+.prod.container {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  padding: 20px;
+}
+
+.prod.title {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
 }
