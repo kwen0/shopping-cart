@@ -3,7 +3,7 @@ import React from 'react';
 function Product(props) {
     const { category } = props;
     return (
-        <div className="test">
+        <div className="product">
             {category.map((item) => (
                 <div className="prod cell">
                     <img src={item.image} alt="jewelry" className="prod img" />

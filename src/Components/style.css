@@ -202,8 +202,9 @@ a {
 .prod.container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
+  gap: 2em;
   padding: 2em;
 }
 
@@ -213,8 +214,26 @@ a {
   justify-content: space-between;
 }
 
-.test {
+.product {
   display: flex;
   flex-wrap: wrap;
-  gap: 4em;
+  gap: 2em;
+}
+
+.navbar {
+  width: 100vw;
+  display: flex;
+  border-bottom: 1px solid rgb(218,218,218);
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  justify-content: center;
+  gap: 5em;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
 }
