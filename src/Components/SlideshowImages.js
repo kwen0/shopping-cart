@@ -15,7 +15,7 @@ export const SlideshowImages = [
     },
     {
         image: slide3,
-        caption: "SHOP BESTSELLERS",
-        link: "/bestsellers"
+        caption: "SHOP NECKLACES",
+        link: "/necklaces"
     },
 ]

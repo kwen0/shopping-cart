@@ -1,5 +1,4 @@
 import React from 'react';
-import { data } from './data.js'
 
 function Product(props) {
     const { category } = props;

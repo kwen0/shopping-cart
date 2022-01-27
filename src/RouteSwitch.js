@@ -1,8 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
-import Bracelets from "./Components/Bracelets";
-import Earrings from "./Components/Earrings";
-import Bestsellers from "./Components/Bestsellers";
 import Comingsoon from "./Components/Comingsoon";
 import Products from "./Components/Products";
 
@@ -11,11 +8,11 @@ const RouteSwitch = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/bracelets" element={<Bracelets />} />
-                <Route path="/earrings" element={<Earrings />} />
-                <Route path="/bestsellers" element={<Bestsellers />} />
+                <Route path="/bracelets" element={<Products category="bracelets" />} />
+                <Route path="/earrings" element={<Products category="earrings" />} />
+                <Route path="/necklaces" element={<Products category="necklaces" />} />
                 <Route path="/comingsoon" element={<Comingsoon />} />
-                <Route path="/all" element={<Products />} />
+                <Route path="/all" element={<Products category="all" />} />
             </Routes>
         </BrowserRouter>
     );
