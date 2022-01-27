@@ -1,8 +1,5 @@
-import { useState } from 'react';
-import { BsBag, BsSuitHeart } from 'react-icons/bs';
-
 function Product(props) {
-    const { category } = props;
+    const { category, addToBag } = props;
 
     return (
         <div className="product">
@@ -14,7 +11,7 @@ function Product(props) {
                         <div className="prod price">${item.price}</div>
                     </div>
                     <div className="prod material">{item.material}</div>
-                    <button className="addToBag">Add to Bag</button>
+                    <button className="addToBag" onClick={() => addToBag(item)}>Add to Bag</button>
                 </div>
             ))
             }

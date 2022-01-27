@@ -10,7 +10,6 @@ function Header() {
             </div>
             <Link to='/'><img src={logo} className="logo" alt="logo" /></Link>
             <div className="header-right">
-                <Link to='/wishlist'><div><BsSuitHeart /></div></Link>
                 <Link to='/bag'><div><BsBag /></div></Link>
             </div>
         </div>

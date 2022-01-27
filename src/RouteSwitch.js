@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import Comingsoon from "./Components/Comingsoon";
 import Products from "./Components/Products";
+import Bag from "./Components/Bag"
 
 const RouteSwitch = () => {
     return (
@@ -13,6 +14,7 @@ const RouteSwitch = () => {
                 <Route path="/necklaces" element={<Products category="necklaces" />} />
                 <Route path="/comingsoon" element={<Comingsoon />} />
                 <Route path="/all" element={<Products category="all" />} />
+                <Route path="/bag" element={<Bag />} />
             </Routes>
         </BrowserRouter>
     );

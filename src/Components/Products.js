@@ -1,11 +1,24 @@
 import Header from './Header';
 import Footer from './Footer';
-import Product from './Product'
-import { data } from './data.js'
-import { Link } from 'react-router-dom'
+import Product from './Product';
+import { data } from './data.js';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+
 
 function Products(props) {
     const { category } = props;
+    const [bag, setBag] = useState([]);
+    function addToBag(product) {
+        const existingItem = bag.find(item => item.id === product.id)
+        if (existingItem) {
+            setBag(bag.map((item) => item.id === product.id ? { ...existingItem, qty: existingItem.qty + 1 } : item))
+        } else {
+            setBag([...bag, { ...product, qty: 1 }])
+        }
+        console.log(bag)
+    }
+
     return (
         <div>
             <Header />
@@ -17,20 +30,20 @@ function Products(props) {
             </div>
             {category === 'bracelets' ?
                 <div className="prod container">
-                    <Product category={data.bracelets} />
+                    <Product category={data.bracelets} addToBag={addToBag} />
                 </div> :
                 category === 'earrings' ?
                     <div className="prod container">
-                        <Product category={data.earrings} />
+                        <Product category={data.earrings} addToBag={addToBag} />
                     </div> :
                     category === 'necklaces' ?
                         <div className="prod container">
-                            <Product category={data.necklaces} />
+                            <Product category={data.necklaces} addToBag={addToBag} />
                         </div> :
                         category === 'all' ? <div className="prod container">
-                            <Product category={data.earrings} />
-                            <Product category={data.bracelets} />
-                            <Product category={data.necklaces} />
+                            <Product category={data.earrings} addToBag={addToBag} />
+                            <Product category={data.bracelets} addToBag={addToBag} />
+                            <Product category={data.necklaces} addToBag={addToBag} />
                         </div> : null}
             <Footer />
         </div >
