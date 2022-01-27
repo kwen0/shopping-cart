@@ -36,7 +36,7 @@ export const data = {
         },
         {
             id: 'e4',
-            name: 'Pearl Trio Huggies',
+            name: 'Pearl Trio Earrings',
             material: '14k Yellow Gold, Pearl',
             price: 100,
             image: e4
@@ -59,7 +59,7 @@ export const data = {
         },
         {
             id: 'b3',
-            name: 'Beaded Pearl Bracelet',
+            name: 'Disco Pearl Bracelet',
             material: '14k Yellow Gold, Pearl',
             price: 150,
             image: b3
@@ -82,7 +82,7 @@ export const data = {
         },
         {
             id: 'n2',
-            name: 'Circle Necklace',
+            name: 'Emblem Necklace',
             material: '14k Yellow Gold',
             price: 80,
             image: n2
@@ -96,7 +96,7 @@ export const data = {
         },
         {
             id: 'n4',
-            name: 'Stars Necklace',
+            name: 'Stars Choker',
             material: 'Gold Vermeil',
             price: 55,
             image: n4

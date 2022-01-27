@@ -1,5 +1,5 @@
 import logo from './images/logo.png'
-import { BsBag, BsSuitHeart, BsPerson } from 'react-icons/bs';
+import { BsBag, BsSuitHeart } from 'react-icons/bs';
 import { Link } from 'react-router-dom'
 
 function Header() {
@@ -10,7 +10,6 @@ function Header() {
             </div>
             <Link to='/'><img src={logo} className="logo" alt="logo" /></Link>
             <div className="header-right">
-                <Link to='/login'><div><BsPerson /></div></Link>
                 <Link to='/wishlist'><div><BsSuitHeart /></div></Link>
                 <Link to='/bag'><div><BsBag /></div></Link>
             </div>

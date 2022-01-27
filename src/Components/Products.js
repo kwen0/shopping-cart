@@ -9,7 +9,7 @@ function Products(props) {
     return (
         <div>
             <Header />
-            <div class="navbar">
+            <div className="navbar">
                 <Link to='/all'><li className={category === "all" ? 'active' : null}>ALL</li></Link>
                 <Link to='/bracelets'><li className={category === "bracelets" ? 'active' : null}>BRACELETS</li></Link>
                 <Link to='/earrings'><li className={category === "earrings" ? 'active' : null}>EARRINGS</li></Link>
