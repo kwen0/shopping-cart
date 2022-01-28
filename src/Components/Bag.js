@@ -15,12 +15,11 @@ function Bag(props) {
                             <div className="prod name">{item.name}</div>
                             <div className="prod material">{item.material}</div>
                             <div class="edit-qty">
-                                <button>-</button>
-                                <div>{item.qty}</div>
-                                <button>+</button>
+                                <button class="btn">-</button>
+                                <div class="qty">{item.qty}</div>
+                                <button class="btn" onClick={() => addToBag(item)}>+</button>
                             </div>
-                            <div className="prod price">${item.price}</div>
-
+                            <div className="prod price">${item.price * item.qty}</div>
                         </div>
                     </div>
                 ))}
