@@ -5,7 +5,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 function Bag(props) {
     const { bag, bagCount, addToBag, removeFromBag, removeEntireItem } = props;
     const total = bag.reduce((sum, item) => sum + item.qty * item.price, 0);
-    const quantity = bag.reduce((count, item) => count + item.qty, 0)
+
     return (
         <div>
             <Header bag={bag} bagCount={bagCount} />
@@ -17,11 +17,11 @@ function Bag(props) {
                             <div>
                                 <div className="wrapper">
                                     <div className="prod name">{item.name}</div>
-                                    <button class="close" onClick={() => removeEntireItem(item)}><AiOutlineClose /></button>
+                                    <button className="close" onClick={() => removeEntireItem(item)}><AiOutlineClose /></button>
                                 </div>
                                 <div className="prod material">{item.material}</div>
                             </div>
-                            <div class="edit">
+                            <div className="edit">
                                 <div class="edit-qty">
                                     <button className="btn" onClick={() => removeFromBag(item)}>-</button>
                                     <div className="qty">{item.qty}</div>
@@ -47,7 +47,7 @@ function Bag(props) {
                             <div>${total} USD</div>
                         </div>
                         <div className="checkout row">
-                            <button className="checkout btn">CONTINUE TO CHECKOUT</button>
+                            <button className="checkout btn" onClick={() => alert('Thank you for shopping with us!')}>CONTINUE TO CHECKOUT</button>
                         </div>
                     </div> : null}
                 </div>
