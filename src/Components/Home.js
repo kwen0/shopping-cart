@@ -6,10 +6,11 @@ import { SlideshowImages } from './SlideshowImages';
 import Content from './Content'
 import Footer from './Footer'
 
-function Home() {
+function Home(props) {
+  const { bag } = props
   return (
     <div>
-      <Header />
+      <Header bag={bag} />
       <Slideshow slides={SlideshowImages} />
       <Content />
       <Footer />

@@ -12,9 +12,7 @@ function Product(props) {
                     </div>
                     <div className="prod material">{item.material}</div>
                     <button className="addToBag" onClick={() => addToBag(item)}>Add to Bag</button>
-                </div>
-            ))
-            }
+                </div>))}
         </div >
     );
 }

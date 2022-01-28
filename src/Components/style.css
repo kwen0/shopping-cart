@@ -15,9 +15,9 @@ body {
 
 .header-right, .header-left {
   display: flex;
-  width: 5em;
-  gap: 1em;
   justify-content: center;
+  width: 4em;
+  gap: 0.2em;
 }
 
 .logo {
@@ -251,4 +251,25 @@ a {
   color: white;
   border: 1px solid white;
   cursor: pointer;
+}
+
+.bag.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  gap: 2em;
+}
+
+.bag.img {
+  max-width: 100px;
+}
+
+.bag.row {
+  display: flex;
+  width: 500px;
+}
+
+.edit-qty {
+  display: flex;
 }
