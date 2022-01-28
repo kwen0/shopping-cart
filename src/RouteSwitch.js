@@ -23,16 +23,18 @@ const RouteSwitch = () => {
         return setBag(bag.filter(item => item.id !== product.id))
     }
 
+    const bagCount = bag.reduce((count, item) => count + item.qty, 0)
+
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home bag={bag} />} />
-                <Route path="/bracelets" element={<Products category="bracelets" addToBag={addToBag} bag={bag} />} />
-                <Route path="/earrings" element={<Products category="earrings" addToBag={addToBag} bag={bag} />} />
-                <Route path="/necklaces" element={<Products category="necklaces" addToBag={addToBag} bag={bag} />} />
-                <Route path="/comingsoon" element={<Comingsoon bag={bag} />} />
-                <Route path="/all" element={<Products category="all" addToBag={addToBag} bag={bag} />} />
-                <Route path="/bag" element={<Bag addToBag={addToBag} removeFromBag={removeFromBag} removeEntireItem={removeEntireItem} bag={bag} />} />
+                <Route path="/" element={<Home bag={bag} bagCount={bagCount} />} />
+                <Route path="/bracelets" element={<Products category="bracelets" addToBag={addToBag} bag={bag} bagCount={bagCount} />} />
+                <Route path="/earrings" element={<Products category="earrings" addToBag={addToBag} bag={bag} bagCount={bagCount} />} />
+                <Route path="/necklaces" element={<Products category="necklaces" addToBag={addToBag} bag={bag} bagCount={bagCount} />} />
+                <Route path="/comingsoon" element={<Comingsoon bag={bag} bagCount={bagCount} />} />
+                <Route path="/all" element={<Products category="all" addToBag={addToBag} bag={bag} bagCount={bagCount} />} />
+                <Route path="/bag" element={<Bag addToBag={addToBag} removeFromBag={removeFromBag} removeEntireItem={removeEntireItem} bag={bag} bagCount={bagCount} />} />
             </Routes>
         </BrowserRouter>
     );

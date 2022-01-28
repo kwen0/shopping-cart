@@ -5,11 +5,11 @@ import { data } from './data.js';
 import { Link } from 'react-router-dom';
 
 function Products(props) {
-    const { category, bag, addToBag } = props;
+    const { category, bag, addToBag, bagCount } = props;
 
     return (
         <div>
-            <Header bag={bag} />
+            <Header bag={bag} bagCount={bagCount} />
             <div className="navbar">
                 <Link to='/all'><li className={category === "all" ? 'active' : null}>ALL</li></Link>
                 <Link to='/bracelets'><li className={category === "bracelets" ? 'active' : null}>BRACELETS</li></Link>

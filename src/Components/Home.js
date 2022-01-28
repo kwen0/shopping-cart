@@ -7,10 +7,10 @@ import Content from './Content'
 import Footer from './Footer'
 
 function Home(props) {
-  const { bag } = props
+  const { bag, bagCount } = props
   return (
     <div>
-      <Header bag={bag} />
+      <Header bag={bag} bagCount={bagCount} />
       <Slideshow slides={SlideshowImages} />
       <Content />
       <Footer />

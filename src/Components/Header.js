@@ -3,7 +3,7 @@ import { BsBag } from 'react-icons/bs';
 import { Link } from 'react-router-dom'
 
 function Header(props) {
-    const { bag } = props;
+    const { bagCount } = props;
     return (
         <div className="header">
             <div className="header-left">
@@ -12,7 +12,7 @@ function Header(props) {
             <Link to='/'><img src={logo} className="logo" alt="logo" /></Link>
             <div className="header-right">
                 <Link to='/bag'><div><BsBag /></div></Link>
-                <div>{bag ? `(${bag.length})` : null}</div>
+                <div>{bagCount !== 0 ? bagCount : null}</div>
             </div>
         </div>
     );

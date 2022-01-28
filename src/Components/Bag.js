@@ -3,16 +3,17 @@ import Footer from './Footer';
 import { AiOutlineClose } from 'react-icons/ai'
 
 function Bag(props) {
-    const { bag, addToBag, removeFromBag, removeEntireItem } = props;
-    console.log(bag)
+    const { bag, bagCount, addToBag, removeFromBag, removeEntireItem } = props;
+    const total = bag.reduce((sum, item) => sum + item.qty * item.price, 0);
+    const quantity = bag.reduce((count, item) => count + item.qty, 0)
     return (
         <div>
-            <Header bag={bag} />
+            <Header bag={bag} bagCount={bagCount} />
             <div className="bag summary">
                 {bag.length !== 0 ? bag.map(item => (
                     <div className="bag row" key={item.id}>
                         <img src={item.image} alt="jewelry" className="bag img" />
-                        <div class="bag details">
+                        <div className="bag details">
                             <div>
                                 <div className="wrapper">
                                     <div className="prod name">{item.name}</div>
@@ -31,6 +32,13 @@ function Bag(props) {
                         </div>
                     </div>
                 )) : <div>Your bag is empty!</div>}
+                <div className="checkout">
+                    <div className="wrapper">
+                        <div>Subtotal: {total}</div>
+                        <div>Shipping: free</div>
+                        <div>{quantity}</div>
+                    </div>
+                </div>
             </div >
             <Footer />
         </div >
