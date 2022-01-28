@@ -26,7 +26,7 @@ const RouteSwitch = () => {
     const bagCount = bag.reduce((count, item) => count + item.qty, 0)
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/shopping-cart/">
             <Routes>
                 <Route path="/" element={<Home bag={bag} bagCount={bagCount} />} />
                 <Route path="/bracelets" element={<Products category="bracelets" addToBag={addToBag} bag={bag} bagCount={bagCount} />} />

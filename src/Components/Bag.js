@@ -23,7 +23,7 @@ function Bag(props) {
                                 <div className="prod material">{item.material}</div>
                             </div>
                             <div className="edit">
-                                <div class="edit-qty">
+                                <div className="edit-qty">
                                     <button className="btn" onClick={() => removeFromBag(item)}>-</button>
                                     <div className="qty">{item.qty}</div>
                                     <button className="btn" onClick={() => addToBag(item)}>+</button>
