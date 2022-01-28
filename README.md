@@ -7,7 +7,7 @@ Dainty is a mock e-commerce jewelry site with a fully functional shopping cart, 
 ### Home Page
 <img width="700" alt="screenshot" src="./public/screenshot1.png">
 
-### Products 
+### Products Page
 <img width="700" alt="screenshot" src="./public/screenshot2.png">
 
 ### Shopping Cart
