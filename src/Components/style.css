@@ -165,7 +165,7 @@ li {
 }
 
 .comingsoon {
-  height: 40vw;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,9 +256,12 @@ a {
 .bag.summary {
   display: flex;
   flex-direction: column;
+  min-height: 50vh;
   align-items: center;
-  padding: 2em;
-  gap: 2em;
+  padding: 1em;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
 }
 
 .bag.img {
@@ -273,18 +276,55 @@ a {
   border: 1px solid rgb(218, 218, 218);
 }
 
+.bag.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 380px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .edit-qty {
   display: flex;
+  width: 70px;
+  justify-content: space-between;
+}
+
+.edit {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
 }
 
 .btn {
   padding: none;
   margin: none;
   border: none;
-  background-color: transparent;
+  background-color: rgb(250,250,250);
+  color: black;
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
 }
 
 .qty {
   font-size: 12px;
+}
+
+.close {
+  padding: none;
+  margin: none;
+  border: none;
+  background-color: transparent;
+}
+
+.close:hover {
+  cursor: pointer;
 }

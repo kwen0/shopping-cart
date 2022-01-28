@@ -13,6 +13,16 @@ const RouteSwitch = () => {
             : setBag([...bag, { ...product, qty: 1 }])
     }
 
+    function removeFromBag(product) {
+        const itemToRemove = bag.find(item => item.id === product.id)
+        itemToRemove.qty === 1 ? setBag(bag.filter(item => item.id !== product.id)) :
+            setBag(bag.map(item => item.id === product.id ? { ...product, qty: product.qty - 1 } : item))
+    }
+
+    function removeEntireItem(product) {
+        return setBag(bag.filter(item => item.id !== product.id))
+    }
+
     return (
         <BrowserRouter>
             <Routes>
@@ -22,7 +32,7 @@ const RouteSwitch = () => {
                 <Route path="/necklaces" element={<Products category="necklaces" addToBag={addToBag} bag={bag} />} />
                 <Route path="/comingsoon" element={<Comingsoon bag={bag} />} />
                 <Route path="/all" element={<Products category="all" addToBag={addToBag} bag={bag} />} />
-                <Route path="/bag" element={<Bag addToBag={addToBag} bag={bag} />} />
+                <Route path="/bag" element={<Bag addToBag={addToBag} removeFromBag={removeFromBag} removeEntireItem={removeEntireItem} bag={bag} />} />
             </Routes>
         </BrowserRouter>
     );
