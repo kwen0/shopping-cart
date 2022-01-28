@@ -1,6 +1,7 @@
 import Header from './Header';
 import Footer from './Footer';
 import { AiOutlineClose } from 'react-icons/ai'
+import { Link } from 'react-router-dom';
 
 function Bag(props) {
     const { bag, bagCount, addToBag, removeFromBag, removeEntireItem } = props;
@@ -49,7 +50,7 @@ function Bag(props) {
                         <div className="checkout row">
                             <button className="checkout btn" onClick={() => alert('Thank you for shopping with us!')}>CONTINUE TO CHECKOUT</button>
                         </div>
-                    </div> : null}
+                    </div> : <Link to='/all'><button className="shop btn">SHOP NOW</button></Link>}
                 </div>
             </div >
             <Footer />

@@ -353,3 +353,12 @@ a {
   font-family: "quicksand";
   font-size: 12px;
 }
+
+.shop.btn {
+  background-color: black;
+  color: white;
+  width: 150px;
+  padding: 1em;
+  font-family: "quicksand";
+  font-size: 12px;
+}
