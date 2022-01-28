@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.cd58ebf1.css",
+    "main.js": "/shopping-cart/static/js/main.3fc65d0a.js",
+    "static/media/content.png": "/shopping-cart/static/media/content.829824f3e425187c80df.png",
+    "static/media/slide2.png": "/shopping-cart/static/media/slide2.9df81d9da1177e6f9490.png",
+    "static/media/slide1.png": "/shopping-cart/static/media/slide1.fa25497767ea09bc33c2.png",
+    "static/media/slide3.png": "/shopping-cart/static/media/slide3.4e7569a3b261a2f64b9d.png",
+    "static/media/n2.jpg": "/shopping-cart/static/media/n2.6e9a6fa02f0ba0beb144.jpg",
+    "static/media/n1.jpg": "/shopping-cart/static/media/n1.bdfa1fa6aa8b377d195f.jpg",
+    "static/media/e1.jpg": "/shopping-cart/static/media/e1.84380be7b76805cb9b97.jpg",
+    "static/media/n3.jpg": "/shopping-cart/static/media/n3.22abee29a861faaa3398.jpg",
+    "static/media/b1.jpg": "/shopping-cart/static/media/b1.75b24fcfed32081b3630.jpg",
+    "static/media/e3.jpg": "/shopping-cart/static/media/e3.4a19b939d47e24cf2920.jpg",
+    "static/media/e4.jpg": "/shopping-cart/static/media/e4.9d99efbe1f5c3b879d75.jpg",
+    "static/media/e2.jpg": "/shopping-cart/static/media/e2.518df8bdaf7c7c14334b.jpg",
+    "static/media/b2.jpg": "/shopping-cart/static/media/b2.ef328a3d2cf7c573c4ca.jpg",
+    "static/media/n4.jpg": "/shopping-cart/static/media/n4.b9ad96a838eea0c2971e.jpg",
+    "static/media/b3.jpg": "/shopping-cart/static/media/b3.d1ed868445e8d5e36996.jpg",
+    "static/media/b4.jpg": "/shopping-cart/static/media/b4.5608c4958489464ddad0.jpg",
+    "static/media/quicksand-all-400-normal.woff": "/shopping-cart/static/media/quicksand-all-400-normal.2744416b8dcf2110e923.woff",
+    "static/media/logo.png": "/shopping-cart/static/media/logo.7b679d1d4387bd8767d4.png",
+    "static/media/quicksand-latin-400-normal.woff2": "/shopping-cart/static/media/quicksand-latin-400-normal.d71cb2a4b837b43bbad5.woff2",
+    "static/media/quicksand-latin-ext-400-normal.woff2": "/shopping-cart/static/media/quicksand-latin-ext-400-normal.7791828d964afa8439da.woff2",
+    "static/media/quicksand-vietnamese-400-normal.woff2": "/shopping-cart/static/media/quicksand-vietnamese-400-normal.5365b00319d96e3bc966.woff2",
+    "index.html": "/shopping-cart/index.html",
+    "main.cd58ebf1.css.map": "/shopping-cart/static/css/main.cd58ebf1.css.map",
+    "main.3fc65d0a.js.map": "/shopping-cart/static/js/main.3fc65d0a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd58ebf1.css",
+    "static/js/main.3fc65d0a.js"
+  ]
+}
