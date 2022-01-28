@@ -1,4 +1,4 @@
-# 💍Dainty
+# 💍 Dainty
 Dainty is a mock e-commerce jewelry site with a fully functional shopping cart, made with React.
 
 [Live demo](https://kwen0.github.io/shopping-cart/)
@@ -10,7 +10,7 @@ Dainty is a mock e-commerce jewelry site with a fully functional shopping cart, 
 ### Products 
 <img width="500" alt="screenshot" src="./public/screenshot2.png">
 
-# Shopping Cart
+### Shopping Cart
 <img width="500" alt="screenshot" src="./public/screenshot3.png">
 
 ## Features
