@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.cd58ebf1.css",
-    "main.js": "/shopping-cart/static/js/main.8136d797.js",
+    "main.css": "/shopping-cart/static/css/main.a7e8f402.css",
+    "main.js": "/shopping-cart/static/js/main.1926ceca.js",
     "static/media/content.png": "/shopping-cart/static/media/content.829824f3e425187c80df.png",
     "static/media/slide2.png": "/shopping-cart/static/media/slide2.9df81d9da1177e6f9490.png",
     "static/media/slide1.png": "/shopping-cart/static/media/slide1.fa25497767ea09bc33c2.png",
@@ -24,11 +24,11 @@
     "static/media/quicksand-latin-ext-400-normal.woff2": "/shopping-cart/static/media/quicksand-latin-ext-400-normal.7791828d964afa8439da.woff2",
     "static/media/quicksand-vietnamese-400-normal.woff2": "/shopping-cart/static/media/quicksand-vietnamese-400-normal.5365b00319d96e3bc966.woff2",
     "index.html": "/shopping-cart/index.html",
-    "main.cd58ebf1.css.map": "/shopping-cart/static/css/main.cd58ebf1.css.map",
-    "main.8136d797.js.map": "/shopping-cart/static/js/main.8136d797.js.map"
+    "main.a7e8f402.css.map": "/shopping-cart/static/css/main.a7e8f402.css.map",
+    "main.1926ceca.js.map": "/shopping-cart/static/js/main.1926ceca.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd58ebf1.css",
-    "static/js/main.8136d797.js"
+    "static/css/main.a7e8f402.css",
+    "static/js/main.1926ceca.js"
   ]
 }
