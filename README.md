@@ -15,12 +15,17 @@ Dainty is a mock e-commerce jewelry site with a fully functional shopping cart, 
 
 ## Features
 - Browse products by category
-- Add products to cart, remove them, or edit the quantity
+- Add products to cart, remove them, and/or edit quantity
 - Clean, responsive UI design
 
 ## Tools Used
-- React.js (react-router)
-- Javascript, CSS
+- React
+    - React Router
+    - Functional components
+    - State and effect hooks
+- Javascript
+- HTML
+- CSS
 
 ## Getting Started
 ```
