@@ -2,6 +2,7 @@ import Header from './Header';
 import Footer from './Footer';
 import { AiOutlineClose } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
+import BagItem from './BagItem';
 
 function Bag(props) {
     const { bag, bagCount, addToBag, removeFromBag, removeEntireItem } = props;
@@ -12,26 +13,7 @@ function Bag(props) {
             <Header bag={bag} bagCount={bagCount} />
             <div className="bag summary">
                 <div>{bag.length !== 0 ? bag.map(item => (
-                    <div className="bag row" key={item.id}>
-                        <img src={item.image} alt="jewelry" className="bag img" />
-                        <div className="bag details">
-                            <div>
-                                <div className="wrapper">
-                                    <div className="prod name">{item.name}</div>
-                                    <button className="close" onClick={() => removeEntireItem(item)}><AiOutlineClose /></button>
-                                </div>
-                                <div className="prod material">{item.material}</div>
-                            </div>
-                            <div className="edit">
-                                <div className="edit-qty">
-                                    <button className="btn" onClick={() => removeFromBag(item)}>-</button>
-                                    <div className="qty">{item.qty}</div>
-                                    <button className="btn" onClick={() => addToBag(item)}>+</button>
-                                </div>
-                                <div className="prod price">${item.price * item.qty}</div>
-                            </div>
-                        </div>
-                    </div>
+                    <BagItem item={item} removeEntireItem={removeEntireItem} addToBag={addToBag} removeFromBag={removeFromBag} />
                 )) : <div>Your bag is empty!</div>}</div>
                 <div>
                     {bag.length !== 0 ? <div className="checkout summary">
