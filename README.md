@@ -23,13 +23,12 @@ Dainty is a mock e-commerce jewelry site with a fully functional shopping cart, 
 - Javascript, CSS
 
 ## Getting Started
-- Clone this project
 ```
 $ git clone git@github.com:kwen0/shopping-cart.git
+cd shopping-cart
+npm install
+npm start
 ```
-- Install the required dependencies by running `npm install`
-- To run this app locally, run `npm start`
-- Distribution files can be produced with `npm run build`
 
 ## Future Features
 - Allow user to search products
