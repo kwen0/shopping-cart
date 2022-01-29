@@ -1,6 +1,5 @@
 import Header from './Header';
 import Footer from './Footer';
-import { AiOutlineClose } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
 import BagItem from './BagItem';
 

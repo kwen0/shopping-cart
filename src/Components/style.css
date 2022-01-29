@@ -362,3 +362,134 @@ a {
   font-family: "quicksand";
   font-size: 12px;
 }
+
+@media only screen and (min-width: 200px) and (max-width: 670px) {
+  .content-image {
+    width: 200px;
+  }
+
+  .right-arrow {
+    display: none;
+  }
+  
+  .left-arrow {
+    display: none;
+  }  
+
+  .slide-button {
+    display: none;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -35px;
+    gap: 1em;
+    padding: 3em;
+  }
+  
+  .content-text {
+    font-size: 15px;
+    text-align: center;
+    width: 75vw;
+  }
+
+  h2 {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer {
+    border-top: 1px solid rgb(218,218,218);
+  }
+  
+  .footer-top, .footer-top-left {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .footer-top-left {
+    width: 100vw;
+    font-size: 12px;
+    gap: 60px;
+    justify-content: center;
+    padding: 20px 30px;
+  }
+  
+  .footer-top-right {
+    display: none;
+  }
+  
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .navbar {
+    width: 100vw;
+    display: flex;
+    border-bottom: 1px solid rgb(218,218,218);
+    font-size: 11px;
+    letter-spacing: 1px;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .prod.img {
+    width: 150px;
+  }
+  
+  .prod {
+    font-size: 11px;
+  }
+  
+  .prod.material {
+    font-size: 10px;
+  }
+  
+  .prod.name {
+    text-transform: uppercase;
+  }
+  
+  .prod.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5em;
+    padding: 1.5em;
+  }
+  
+  .prod.title {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+  }
+  
+  .addToBag {
+    width: 150px;
+  }
+
+  .bag.summary {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .bag.row {
+    width: 300px;
+  }
+
+  .checkout.row {
+    width: 250px;
+  }
+}
