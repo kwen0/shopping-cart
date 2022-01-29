@@ -39,7 +39,6 @@ npm start
 - Allow user to search products
 - Allow user to sort products by price or by material
 - Add to wishlist functionality
-- Implement mobile friendliness
 
 ## Attributions
 - Photos by [Joeyy Lee](https://unsplash.com/@joeyy_anne), [Jasmin Chew](https://unsplash.com/@majestical_jasmin), [Nati Melnychuk](https://unsplash.com/@natinati), [Kate Hliznitsova](https://unsplash.com/@kate_gliz), and [Mariana Beltrán](https://unsplash.com/@ostranenie) on [Unsplash](https://unsplash.com/)
