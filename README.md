@@ -1,5 +1,5 @@
 # 💍 Dainty
-Dainty is a mock e-commerce jewelry site with a fully functional shopping cart, made with React.
+Dainty is an e-commerce jewelry site with a fully functional shopping cart, made with React.
 
 [Live demo](https://kwen0.github.io/shopping-cart/)
 
@@ -20,7 +20,7 @@ Dainty is a mock e-commerce jewelry site with a fully functional shopping cart, 
 
 ## Tools Used
 - React
-    - React Router
+    - react-router-dom
     - Functional components
     - State and effect hooks
 - Javascript
